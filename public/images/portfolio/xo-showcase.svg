@@ -1,0 +1,22 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" fill="#0C0A1A"/>
+  <rect x="58" y="70" width="784" height="480" rx="28" fill="#17142E" stroke="#F5D76E" stroke-width="6"/>
+  <g opacity="0.85">
+    <rect x="116" y="170" width="220" height="220" rx="28" fill="#201B3F"/>
+    <rect x="390" y="170" width="220" height="220" rx="28" fill="#201B3F"/>
+    <rect x="664" y="170" width="120" height="220" rx="28" fill="#201B3F"/>
+  </g>
+  <g stroke="#F6F1DE" stroke-width="12" stroke-linecap="round">
+    <line x1="176" y1="230" x2="236" y2="290"/>
+    <line x1="236" y1="230" x2="176" y2="290"/>
+  </g>
+  <g stroke="#F4979C" stroke-width="12" stroke-linecap="round" fill="none">
+    <circle cx="495" cy="270" r="48"/>
+  </g>
+  <g fill="#F5D76E" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">
+    <text x="142" y="432">X</text>
+    <text x="440" y="432">O</text>
+    <text x="700" y="432">WIN</text>
+  </g>
+  <text x="450" y="122" text-anchor="middle" fill="#F6F1DE" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="4">TIC-TAC-TOE</text>
+</svg>

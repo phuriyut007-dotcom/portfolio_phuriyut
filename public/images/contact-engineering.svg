@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#132b40"/>
+      <stop offset="1" stop-color="#081321"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0v28" fill="none" stroke="#67e8f9" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="420" rx="18" fill="url(#bg)"/>
+  <rect width="720" height="420" rx="18" fill="url(#grid)"/>
+  <path d="M72 208h100l38-56h90m258 0h-74l-46 58h-80m-40 0h-80l-46 62h-92m458-6h-88l-38-56h-70" fill="none" stroke="#67e8f9" stroke-opacity=".75" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="282" y="150" width="156" height="120" rx="14" fill="#0a1725" stroke="#67e8f9" stroke-opacity=".7" stroke-width="3"/>
+  <path d="M305 176h110m-110 22h74m-74 22h92m-92 22h54" stroke="#94a3b8" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="72" cy="208" r="9" fill="#07111f" stroke="#67e8f9" stroke-width="3"/>
+  <circle cx="548" cy="152" r="9" fill="#07111f" stroke="#c4b5fd" stroke-width="3"/>
+  <circle cx="72" cy="276" r="9" fill="#07111f" stroke="#67e8f9" stroke-width="3"/>
+  <circle cx="576" cy="266" r="9" fill="#07111f" stroke="#c4b5fd" stroke-width="3"/>
+  <text x="360" y="334" fill="#e2e8f0" font-family="monospace" font-size="16" letter-spacing="5" text-anchor="middle">CONNECT / BUILD / TEST</text>
+</svg>

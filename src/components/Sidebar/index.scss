@@ -1,0 +1,218 @@
+.nav-bar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px clamp(18px, 5vw, 72px);
+  border-bottom: 3px solid rgba(255, 207, 91, 0.85);
+  background: linear-gradient(105deg, rgba(48, 35, 68, 0.98), rgba(91, 59, 89, 0.98));
+  box-shadow: 0 4px 0 rgba(20, 24, 59, 0.45);
+  box-sizing: border-box;
+  backdrop-filter: blur(18px);
+
+  .logo {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 12px;
+    color: #f4f0ff;
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: #f7dce5;
+    box-shadow: 3px 3px 0 rgba(210, 131, 158, 0.4);
+    color: #cf5278;
+    font-size: 1.7rem;
+  }
+
+  .brand-name {
+    color: #f4f0ff;
+    font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(4px, 1.4vw, 20px);
+    margin-left: auto;
+    padding-left: 28px;
+
+    a {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      gap: 9px;
+      padding: 0 13px;
+      border-radius: 0;
+      color: rgba(255, 242, 213, 0.78);
+      font-family: 'Inter', 'Noto Sans Thai', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+
+      svg {
+        color: #ffe477;
+        transition: color 0.2s ease;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        color: var(--theme-cream);
+        background: rgba(255, 242, 213, 0.1);
+        transform: translateY(-2px);
+      }
+
+      &.active {
+        color: #fff;
+        color: var(--theme-ink);
+        background: var(--theme-pixel-yellow);
+        box-shadow: 3px 3px 0 #a97842;
+
+        svg {
+          color: var(--theme-ink);
+        }
+      }
+    }
+  }
+
+  .nav-controls {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 12px;
+    margin-left: 16px;
+  }
+
+  .theme-toggle {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border: 1px solid rgba(255, 242, 213, 0.28);
+    border-radius: 50%;
+    background: rgba(255, 242, 213, 0.08);
+    color: #ffe477;
+    font-size: 1.35rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 242, 213, 0.16);
+    }
+  }
+
+  .theme-toggle:focus-visible,
+  .hamburger-icon:focus-visible {
+    outline: 3px solid var(--theme-pixel-yellow);
+    outline-offset: 3px;
+  }
+
+  .hamburger-icon {
+    display: none;
+    color: #ffe477;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .nav-bar {
+    padding-inline: 18px;
+
+    .brand-name {
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      padding: 0 10px;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav-bar {
+    min-height: 68px;
+    padding: 8px 16px;
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+    }
+
+    .nav-controls {
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    .theme-toggle {
+      width: 38px;
+      height: 38px;
+    }
+
+    .brand-name {
+      max-width: 145px;
+      overflow: hidden;
+      font-size: 1.3rem;
+      text-overflow: ellipsis;
+    }
+
+    .hamburger-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    nav {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 12px;
+      display: none;
+      min-width: 190px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 5px;
+      padding: 10px;
+      border: 2px solid var(--theme-pixel-yellow);
+      border-radius: 0;
+      background: rgba(20, 24, 59, 0.98);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.42);
+      margin-left: 0;
+
+      &.mobile-show {
+        display: flex;
+      }
+
+      a {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .nav-bar nav {
+    display: flex !important;
+  }
+}

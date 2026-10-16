@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#102b3e"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#22d3ee" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <path d="M0 410h900" stroke="#67e8f9" stroke-opacity=".12" stroke-width="2"/>
+  <rect x="282" y="100" width="336" height="300" rx="30" fill="#0a1725" stroke="#67e8f9" stroke-opacity=".55" stroke-width="4"/>
+  <path d="M291 260h318v120a20 20 0 0 1-20 20H311a20 20 0 0 1-20-20z" fill="url(#water)"/>
+  <path d="M292 260c32-18 48 18 80 0s48 18 80 0 48 18 80 0 48 18 76 0" fill="none" stroke="#a5f3fc" stroke-width="4"/>
+  <path d="M345 134v60m0 22v18m0 22v18" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="345" cy="141" r="12" fill="#67e8f9"/>
+  <path d="M345 134h91v-35h104" fill="none" stroke="#67e8f9" stroke-width="4"/>
+  <rect x="531" y="79" width="81" height="42" rx="8" fill="#102333" stroke="#67e8f9" stroke-width="2"/>
+  <text x="571" y="105" fill="#a5f3fc" font-family="monospace" font-size="14" text-anchor="middle">MCU</text>
+  <path d="M572 122v48h78" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  <circle cx="665" cy="170" r="18" fill="#8b5cf6" fill-opacity=".2" stroke="#c4b5fd" stroke-width="3"/>
+  <path d="M665 161v13m0 6v1" stroke="#e9d5ff" stroke-width="3" stroke-linecap="round"/>
+  <text x="450" y="446" fill="#94a3b8" font-family="monospace" font-size="17" letter-spacing="4" text-anchor="middle">WATER LEVEL ALERT / CONCEPT</text>
+  <text x="450" y="365" fill="#e2e8f0" font-family="monospace" font-size="16" text-anchor="middle">LEVEL SENSOR</text>
+</svg>
